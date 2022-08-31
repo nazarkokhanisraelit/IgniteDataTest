@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimonTest.Api", "SimonTest.Api\SimonTest.Api.csproj", "{611B9AFA-7918-4297-AA79-95DA0B8CAB64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimonTest.Infrastructure", "SimonTest.Infrastructure\SimonTest.Infrastructure.csproj", "{91058EB6-17C7-4F54-B417-DB6A1D82DEAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimonTest.Domain", "SimonTest.Domain\SimonTest.Domain.csproj", "{A2DF7B67-A2B8-4211-82D8-140427A17828}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{611B9AFA-7918-4297-AA79-95DA0B8CAB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611B9AFA-7918-4297-AA79-95DA0B8CAB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611B9AFA-7918-4297-AA79-95DA0B8CAB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611B9AFA-7918-4297-AA79-95DA0B8CAB64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91058EB6-17C7-4F54-B417-DB6A1D82DEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91058EB6-17C7-4F54-B417-DB6A1D82DEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91058EB6-17C7-4F54-B417-DB6A1D82DEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91058EB6-17C7-4F54-B417-DB6A1D82DEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DF7B67-A2B8-4211-82D8-140427A17828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DF7B67-A2B8-4211-82D8-140427A17828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DF7B67-A2B8-4211-82D8-140427A17828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DF7B67-A2B8-4211-82D8-140427A17828}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,4 @@
-namespace Simon_Test.Application.Extensions;
+namespace SimonTest.Api.Application.Extensions;
 
 public static class Extensions
 {

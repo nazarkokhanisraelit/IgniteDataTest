@@ -2,8 +2,9 @@ using System.Reflection;
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Simon_Test.Application.Extensions;
-using Simon_Test.Application.Filters;
+using SimonTest.Api.Application.Extensions;
+using SimonTest.Api.Extensions;
+using SimonTest.Api.Filters;
 using SimonTest.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);

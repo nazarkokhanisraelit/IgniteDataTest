@@ -1,9 +1,9 @@
-﻿namespace Simon_Test.Application.Queries.Group;
+﻿namespace SimonTest.Api.Application.Queries.Group;
 
+using DTOs;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Simon_Test.Application.DTOs;
-using SimonTest.Infrastructure.Persistence;
+using Infrastructure.Persistence;
 using TradePlus.ResultData.Abstract.Generics;
 using static TradePlus.ResultData.ResultFactory;
 

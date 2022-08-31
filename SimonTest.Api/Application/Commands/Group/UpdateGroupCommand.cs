@@ -1,9 +1,9 @@
-namespace Simon_Test.Application.Commands.Group;
+namespace SimonTest.Api.Application.Commands.Group;
 
+using Constants;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Simon_Test.Application.Constants;
-using SimonTest.Infrastructure.Persistence;
+using Infrastructure.Persistence;
 using TradePlus.ResultData;
 using TradePlus.ResultData.Abstract;
 

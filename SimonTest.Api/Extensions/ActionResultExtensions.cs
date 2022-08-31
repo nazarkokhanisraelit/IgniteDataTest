@@ -1,8 +1,8 @@
-namespace Simon_Test.Application.Extensions;
+namespace SimonTest.Api.Extensions;
 
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Response;
+using ActionResults;
 using TradePlus.ResultData.Abstract;
 using TradePlus.ResultData.Abstract.Generics;
 

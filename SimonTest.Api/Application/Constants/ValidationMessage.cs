@@ -1,4 +1,4 @@
-namespace Simon_Test.Application.Constants;
+namespace SimonTest.Api.Application.Constants;
 
 public static class ValidationMessage
 {

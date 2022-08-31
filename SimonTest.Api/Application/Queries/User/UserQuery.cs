@@ -1,11 +1,11 @@
-﻿namespace Simon_Test.Application.Queries.User;
+﻿namespace SimonTest.Api.Application.Queries.User;
 
 using System.ComponentModel.DataAnnotations;
+using Constants;
+using DTOs;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Simon_Test.Application.Constants;
-using Simon_Test.Application.DTOs;
-using SimonTest.Infrastructure.Persistence;
+using Infrastructure.Persistence;
 using TradePlus.ResultData.Abstract.Generics;
 using static TradePlus.ResultData.ResultFactory;
 
@@ -30,18 +30,13 @@ public record UserQuery(
                 .AsNoTracking();
 
             if (request.Id is not null)
-            {
                 usersQuery = usersQuery
                     .Where(s => s.Id == request.Id);
-            }
-            else
-            {
-                if (request.Email is null)
-                    return Failure<QueryResult>(ValidationMessage.UserIdOrEmailShouldBePresent);
-
+            else if (request.Email is not null)
                 usersQuery = usersQuery
                     .Where(s => s.Email == request.Email);
-            }
+            else
+                return Failure<QueryResult>(ValidationMessage.UserIdOrEmailShouldBePresent);
 
             var user = await usersQuery
                 .Select(

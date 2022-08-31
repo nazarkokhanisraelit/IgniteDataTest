@@ -1,7 +1,7 @@
-namespace Simon_Test.Application.Extensions;
+namespace SimonTest.Api.Extensions;
 
 using Microsoft.EntityFrameworkCore;
-using SimonTest.Infrastructure.Persistence;
+using Infrastructure.Persistence;
 
 public static class SeedExtension
 {

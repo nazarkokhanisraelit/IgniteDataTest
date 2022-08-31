@@ -1,4 +1,4 @@
-namespace Simon_Test.Application.Response;
+namespace SimonTest.Api.ActionResults;
 
 using Microsoft.AspNetCore.Mvc;
 using TradePlus.ResultData.Abstract;

@@ -1,10 +1,10 @@
-namespace Simon_Test.Application.Commands.Group;
+namespace SimonTest.Api.Application.Commands.Group;
 
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using SimonTest.Domain.Entities;
-using SimonTest.Infrastructure.Persistence;
+using Domain.Entities;
+using Infrastructure.Persistence;
 using TradePlus.ResultData.Abstract;
 using static TradePlus.ResultData.ResultFactory;
 

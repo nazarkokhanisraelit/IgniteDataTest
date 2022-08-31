@@ -1,12 +1,12 @@
 #pragma warning disable CS1591
-namespace Simon_Test.Application.Filters;
+namespace SimonTest.Api.Filters;
 
+using ActionResults;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Response;
 using TradePlus.ResultData;
 using TradePlus.ResultData.Abstract.Generics;
 using TradePlus.ResultData.Extensions;

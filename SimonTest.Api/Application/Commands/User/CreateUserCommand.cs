@@ -1,11 +1,11 @@
-﻿namespace Simon_Test.Application.Commands.User;
+﻿namespace SimonTest.Api.Application.Commands.User;
 
 using System.ComponentModel.DataAnnotations;
+using Constants;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Simon_Test.Application.Constants;
-using SimonTest.Domain.Entities;
-using SimonTest.Infrastructure.Persistence;
+using Domain.Entities;
+using Infrastructure.Persistence;
 using TradePlus.ResultData.Abstract;
 using static TradePlus.ResultData.ResultFactory;
 
@@ -41,7 +41,8 @@ public record CreateUserCommand(
                 var groups = await _context.Groups
                     .ToListAsync(cancellationToken);
 
-                var allGroupsExist = request.Groups.All(g => groups.Any(dbg => dbg.Id == g));
+                var allGroupsExist = request.Groups
+                    .All(g => groups.Any(dbg => dbg.Id == g));
 
                 if (!allGroupsExist)
                     return Failure(ValidationMessage.OneOfUserGroupsNotFound);
